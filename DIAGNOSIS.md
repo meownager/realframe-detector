@@ -1,7 +1,6 @@
 # Project Diagnosis — AI Screenshot Detector
 
 **Date:** 2026-04-30
-**Author:** Claude (working with Syeda)
 **Scope:** Honest assessment of current state, before any rework.
 
 ---
@@ -63,7 +62,6 @@ You already documented #1 honestly in `QA_PREP.md` Q8 ("the fix isn't a better a
 
 | Missing | Why it matters |
 |------|------|
-| **CLAUDE.md** in project root | Persists your base rules across all future Cowork sessions. Easy win. |
 | **Larger eval dataset** | Without it, no commercial-grade claim is defensible. |
 | **Frequency-domain analysis** | Single biggest known accuracy lever for diffusion detection. |
 | **Multi-generator training data** | Single biggest known generalization lever. |
@@ -74,12 +72,11 @@ You already documented #1 honestly in `QA_PREP.md` Q8 ("the fix isn't a better a
 
 ## Roadmap proposal (what we'd do next, ordered)
 
-I'm **not asking for approval to do these yet** — just listing them so you can see the path. We'll discuss and pick before writing a single line of code.
 
-**Phase 1 — Foundations (you learn, no code from me):**
-- [Layer 1A in separate chat] Python skills you need
-- [Layer 1B in separate chat] CNNs from scratch
-- [In this chat, after Layer 1B] Walk through your existing `train.py` line by line so you understand what your own code does
+**Phase 1 — Foundations:**
+- Python skills refresh
+- CNNs from scratch
+- Walk through `train.py` line by line
 
 **Phase 2 — Eval-first upgrade:**
 - Build a larger, multi-generator, multi-platform held-out test set
@@ -105,20 +102,3 @@ I'm **not asking for approval to do these yet** — just listing them so you can
 - API endpoint (FastAPI + Docker)
 - Stronger UX
 - Pricing / market positioning
-
----
-
-## Open questions for Syeda
-
-1. **The course project is done — was the presentation already delivered (you have `SPEECH.md` and `ECE57000_Presentation_Monowara.pptx`)? If yes, the existing repo is "frozen for grading" and we should plan whether to keep working on `main` or branch off into a `v2` branch.**
-2. **What hardware do you have?** (Will determine if we use Colab T4, Colab Pro, Kaggle, or your own machine.)
-3. **How much data are you willing to manually verify?** This determines how big our high-quality eval set can be.
-4. **Are you comfortable making real commits/PRs as we go**, or do you want me to draft commits and you commit yourself? (I recommend the latter for learning.)
-
----
-
-## What I recommend we do RIGHT NOW
-
-1. **You** open the two parallel chats (Layer 1A and Layer 1B) and start the foundations work in the background.
-2. **Here**, we move to Layer 3 strategy: I do focused web research on April 2026 SOTA detectors + datasets (token-cost: medium, ~3-4 web searches) and bring back a recommendation. **Tell me yes or no on this.**
-3. **In parallel**, I draft a `CLAUDE.md` for your project folder so your base rules are loaded by every future session.
