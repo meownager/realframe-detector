@@ -20,7 +20,7 @@ Go to https://github.com/new and create a repo with:
 ### 1b. Initialize git locally and push
 
 ```bash
-cd "/Users/syedam./Documents/Claude/Projects/AI - Project on AI-image detection"
+cd realframe-detector
 
 git init
 git add .
