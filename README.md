@@ -54,7 +54,6 @@ data/
   ig-data/                49 hand-collected Instagram screenshots (eval only)
 tests/                  Smoke tests
 DIAGNOSIS.md            v1 → v2 analysis and roadmap
-CLAUDE.md               Working rules for AI assistants on this repo
 ```
 
 ## Quick start
